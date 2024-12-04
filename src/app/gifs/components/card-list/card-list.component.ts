@@ -4,14 +4,7 @@ import { Component } from '@angular/core';
   selector: 'gifs-card-list',
   standalone: false,
 
-  template: `
-    <ul>
-      <li>Primero</li>
-      <li>Segundo</li>
-      <li>Tercero</li>
-      <li>Cuarto</li>
-    </ul>
-  `
+  templateUrl: './card-list.component.html',
 })
 export class CardListComponent {
 
