@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { GifsModule } from './gifs/gifs.module';
@@ -18,7 +19,8 @@ import { AppComponent } from './app.component';
     SharedModule,
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration(withEventReplay()),
+    provideHttpClient(),
   ],
   bootstrap: [AppComponent]
 })
