@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GifsCardComponent } from './gifs-card.component';
+import { CardComponent } from './card.component';
 
-describe('GifsCardComponent', () => {
-  let component: GifsCardComponent;
-  let fixture: ComponentFixture<GifsCardComponent>;
+describe('CardComponent', () => {
+  let component: CardComponent;
+  let fixture: ComponentFixture<CardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GifsCardComponent]
+      declarations: [CardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GifsCardComponent);
+    fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
