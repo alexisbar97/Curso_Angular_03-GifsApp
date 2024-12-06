@@ -5,7 +5,6 @@ import { Gif } from '../../interfaces/gifs.interfaces';
   selector: 'gifs-card',
   standalone: false,
   templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
 })
 
 export class CardComponent implements OnInit {
@@ -13,6 +12,6 @@ export class CardComponent implements OnInit {
   public gif!: Gif;
 
   ngOnInit(): void {
-    if (!this.gif) throw new Error('Gif Property is Required.');
+    if ( !this.gif ) throw new Error('Gif property is required');
   }
 }
